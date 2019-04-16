@@ -1,5 +1,6 @@
 /********** Fixes **********/
 
+
 * {
   margin:0;
   padding:0;
@@ -9,14 +10,15 @@
   -moz-box-sizing: border-box;
 }
 
-.clearfix:after {
+.clearfix::after {
   content: ".";
-  display: block;
+  display: table;
   clear: both;
   visibility: hidden;
   height: 0;
   line-height: 0;
 }
+
 
 .clear {
   clear: both;
@@ -24,4 +26,30 @@
 
 /* Positioning Classes */
 
+
+.grass {
+  width: 60%;
+  float: left;
+  display: block;
+  position: relative;
+  margin: 1em;
+  clear: left;
+}
+
+.archive {
+  width: 30%;
+  float: right;
+  clear:block;
+  position: relative;
+}
+
+/*img#product-1,img#product-2, img#product-3 {*/
+/*  width: 33%;*/
+/*  display: inline-block;*/
+/*  position: relative;*/
+/*}*/
+
+.deals  {
+  clear: both;
+}
 
