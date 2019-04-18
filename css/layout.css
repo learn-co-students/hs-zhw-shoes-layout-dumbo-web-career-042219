@@ -24,4 +24,22 @@
 
 /* Positioning Classes */
 
+.grass {
+  width: 60%;
+  float: left;
+  display: block;
+  position: relative;
+  margin: 1em;
+  clear: left;
+}
 
+.archive {
+  width: 30%;
+  float: right;
+  clear:block;
+  position: relative;
+}
+
+.deals  {
+  clear: both;
+}
