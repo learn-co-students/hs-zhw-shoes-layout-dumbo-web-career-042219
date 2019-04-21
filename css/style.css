@@ -1,9 +1,30 @@
+Skip to content
+Why GitHub?
+Enterprise
+Explore
+Marketplace
+Pricing
+Search
+
+Sign in
+Sign up
+34 0 8 learn-co-students/hs-zhw-shoes-layout-dumbo-web-career-042219
+ Code  Issues 0  Pull requests 4  Projects 0  Insights
+Join GitHub today
+GitHub is home to over 31 million developers working together to host and review code, manage projects, and build software together.
+
+hs-zhw-shoes-layout-dumbo-web-career-042219/css/style.css
+@omfgitzchewy omfgitzchewy updated html and create css classes
+60b7450 2 days ago
+@jongrover @DanielSeehausen @omfgitzchewy
+340 lines (278 sloc)  7.89 KB
+
 /********** Web Fonts **********/
 @import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900); /* font-family: 'Elsie Swash Caps', cursive; */
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script); /* font-family: 'Clicker Script', cursive; */
 
 /* scale all images, and media to accomodate responsive layout. */
-img, video, audio, iframe, table, form { 
+img, video, audio, iframe, table, form {
   width:100%; /* IE */
   max-width: 100%; /* FF, Safari, Chrome */
 }
@@ -16,6 +37,11 @@ img.verif_img {
 }
 
 /********** Global **********/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
   background: url(../images/handmadepaper.png);
@@ -133,6 +159,35 @@ iframe {
 .contact_form {
   height: 415px;
 }
+
+.col-1 {
+  float:left;
+  width: 32%;
+}
+
+.col-2 {
+  float:left;
+  width: 66%;
+}
+
+[class*="col-"]{
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.first{
+  margin-left: 0%;
+}
+
 
 /********** Header **********/
 
@@ -301,5 +356,3 @@ footer a {
   color: #555;
   text-decoration: underline;
 }
-
-/* code examples copyright Jonathan Grover 2012 */
