@@ -17,6 +17,7 @@ img.verif_img {
 
 /********** Global **********/
 
+
 body {
   background: url(../images/handmadepaper.png);
 }
@@ -112,7 +113,10 @@ iframe {
 
 .shadow {
   box-shadow: 0 3px 10px #333;
+  float: left;
 }
+
+
 
 .milk_text {
   font: bold 42px 'Elsie Swash Caps', cursive;
